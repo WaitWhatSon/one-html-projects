@@ -1,0 +1,36 @@
+#background {
+    background-color: bisque;
+    position: relative;
+
+    height: 550px;
+    width: 870px;
+}
+
+.logic_circuit {
+    position: absolute;  
+
+    box-shadow: 5px 5px 5px rgb(43, 41, 41);
+}
+
+.board {
+    background-color: cornsilk;
+    position: absolute;
+
+    height: 480px;
+    width: 100px;
+}
+
+#buttons label {
+    position: absolute;
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+
+    box-shadow: 5px 5px 5px rgb(43, 41, 41);
+}
+
+#background .pins{
+    position: absolute;
+}

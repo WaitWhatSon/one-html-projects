@@ -1,0 +1,232 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" type="module"></script>
+    </head>
+    
+    <body>
+
+        <div id="background">
+
+            <object 
+                    id="frame" 
+                    type="image/svg+xml" 
+                    data="./graphics/frame.svg">
+            </object>
+
+
+            <div id="buttons">
+                <label
+                    style="left:30px; top:20px;">
+                    <input 
+                        type="checkbox"
+                        id="input 1"/>
+                        <p>input 1</p>
+                </label>
+
+                <label
+                    style="left:30px; top:90px;">
+                    <input 
+                        type="checkbox"
+                        id="input 2"/>
+                        <p>input 2</p>
+                </label>
+
+                <label
+                    style="left:30px; top:160px;">
+                    <input 
+                        type="checkbox"
+                        id="input 3"/>
+                        <p>input 3</p>
+                </label>
+
+                <label
+                    style="left:30px; top:230px;">
+                    <input 
+                        type="checkbox"
+                        id="input 4"/>
+                        <p>input 4</p>
+                </label>
+
+                <label
+                    style="left:30px; top:320px; background-color: blue;">
+                    <input 
+                        type="checkbox"
+                        id="input 5"/>
+                        <p>input 5</p>
+                </label>
+
+                <label
+                    style="left:30px; top:390px; background-color: blue;">
+                    <input 
+                        type="checkbox"
+                        id="input 6"/>
+                        <p>input 6</p>
+                </label>
+            </div>
+
+
+                <datalist id="outputs">
+                    <option value="input 1"></option>
+                    <option value="input 2"></option>
+                    <option value="input 3"></option>
+                    <option value="input 4"></option>
+                    <option value="input 5"></option>
+                    <option value="input 6"></option>
+                </datalist>
+
+                
+                <object 
+                    id="nand_0" 
+                    type="image/svg+xml" 
+                    data="./graphics/gates/7400_nand.svg"
+                    class="logic_circuit"
+                    style="left:180px; top:20px;">
+                </object>
+                <div 
+                    class="pins"
+                    style="left:120px; top:20px;">
+                    
+                    <input list="outputs">
+                    <br>
+                    <input list="outputs">
+                    <p>outputNAND1</p>
+                </div>
+                
+                <object 
+                    id="nand_1" 
+                    type="image/svg+xml" 
+                    data="./graphics/gates/7400_nand.svg"
+                    class="logic_circuit"
+                    style="left:180px; top:140px;">
+                </object>
+
+                <object 
+                    id="nand_2" 
+                    type="image/svg+xml" 
+                    data="./graphics/gates/7400_nand.svg"
+                    class="logic_circuit"
+                    style="left:180px; top:260px;">
+                </object>
+
+                <object 
+                    id="nand_3" 
+                    type="image/svg+xml" 
+                    data="./graphics/gates/7400_nand.svg"
+                    class="logic_circuit"
+                    style="left:180px; top:380px;">
+                </object>
+
+                
+
+                <!-- <object id="nand_1" type="image/svg+xml" data="./graphics/gates/7400_nand.svg"></object> -->
+                <div id="nand_checkboxes"></div>
+                
+                
+
+
+
+                <object 
+                    id="7_segment_led" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/7_segment_led.svg" 
+                    class="logic_circuit"
+                    style="left:520px; top:20px;">
+                </object>
+
+                <object 
+                    id="7_segment_led_2" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/7_segment_led.svg" 
+                    class="logic_circuit"
+                    style="left:600px; top:20px;">
+                </object>
+
+                <object 
+                    id="7_segment_led_3" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/7_segment_led.svg" 
+                    class="logic_circuit"
+                    style="left:690px; top:20px;">
+                </object>
+
+                <object 
+                    id="7_segment_led_4" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/7_segment_led.svg" 
+                    class="logic_circuit"
+                    style="left:770px; top:20px;">
+                </object>
+            <!-- <div id="led_checkboxes"></div> -->
+
+                <object 
+                    id="7_segment_led_driver" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/7_segment_led_driver.svg"
+                    class="logic_circuit"
+                    style="left:520px; top:130px;">
+                </object>
+
+                <object 
+                    id="7_segment_led_driver_2" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/7_segment_led_driver.svg"
+                    class="logic_circuit"
+                    style="left:600px; top:130px;">
+                </object>
+                
+                <object 
+                    id="7_segment_led_driver_3" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/7_segment_led_driver.svg"
+                    class="logic_circuit"
+                    style="left:690px; top:130px;">
+                </object>
+                
+                <object 
+                    id="7_segment_led_driver_4" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/7_segment_led_driver.svg"
+                    class="logic_circuit"
+                    style="left:770px; top:130px;">
+                </object>
+                
+                
+                <div id="driver_checkboxes"></div>
+
+            <!-- </div> -->
+
+            <!-- <div 
+                class="board"
+                style="left:200px; top:10px;"> -->
+
+                <object 
+                    id="leds_0" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/4_led.svg"
+                    class="logic_circuit"
+                    style="left:690px; top:270px;">
+                </object>
+                <!-- <div id="leds_checkboxes"></div> -->
+                
+                <object 
+                    id="leds_1" 
+                    type="image/svg+xml" 
+                    data="./graphics/led/4_led.svg"
+                    class="logic_circuit"
+                    style="left:770px; top:270px;">
+                </object>
+                <!-- <div id="leds_checkboxes"></div> -->
+                
+
+            <!-- </div> -->
+
+
+        </div>
+
+        
+        
+    </body>
+
+</html>
